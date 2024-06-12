@@ -1,3 +1,4 @@
+        JUST A SNEAK PEEK!!!
 #Turn your design vision into reality with TailorShack Custom Merch! This User-friendly platform empowers anyone to create custom t-shirts, hoodies, tote bags, and more.
 
 Whether you're an individual with a creative spark or a small business looking for branded merchandise, this platform makes the design process simple and enjoyable.
@@ -39,3 +40,10 @@ Here are some otehr projects that share a similar spirit of empowering creativit
 Licensing:
 
 This platform is currently under development and uses an open-source license. I will clearly outline the specific license terms in the code repository soon.
+
+Screenshots:
+![Screenshot 2024-06-12 175633](https://github.com/shacky-me/TailorShack-Merch-Design-Website/assets/110165182/8ee8d82b-dbe2-4cee-a447-469741c2335e)
+![Screenshot 2024-06-12 175617](https://github.com/shacky-me/TailorShack-Merch-Design-Website/assets/110165182/1963c937-80b1-4d8c-828f-59ff4ce4f356)
+![Screenshot 2024-06-12 175559](https://github.com/shacky-me/TailorShack-Merch-Design-Website/assets/110165182/d71cf987-a38a-4720-bd86-b17940a18a05)
+![Screenshot 2024-06-12 175815](https://github.com/shacky-me/TailorShack-Merch-Design-Website/assets/110165182/6f6fe314-c43e-4e06-8db0-2cc12cf02c54)
+![Screenshot 2024-06-12 175751](https://github.com/shacky-me/TailorShack-Merch-Design-Website/assets/110165182/7bd145ec-3826-4028-9e6c-71988076fd4b)
