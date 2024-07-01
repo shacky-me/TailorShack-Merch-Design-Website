@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Character Encoding: Defines the character encoding for the HTML document -->
+    <meta charset="UTF-8">
+    
+    <!-- Compatibility Mode: Ensures proper rendering and functionality in IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Viewport Settings: Sets the viewport to make the website responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Metadata: Keywords, description, and author for search engine optimization -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Kigen Meshack">
+    
+    <!-- Stylesheet: Link to the external CSS file for styling the webpage -->
+    <link rel="stylesheet" href="/assets/styles.css">
+    
+    <!-- Page Title: Title displayed in the browser tab -->
+    <title>TailorShack Custom Merch Design</title>
+    
+    <!-- Preconnect to Google Fonts: Improves performance by preconnecting to the Google Fonts domain -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts: Link to the Poppins font family from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dbfc6bcf24.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <section>
+      <div class="dashboard">
+        <div class="sidebar">
+          <a href="/html/index.html"><img src="/assets/Images/TailorShack2.png" class="logome"></a>
+            <ul>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="productCatalog.html">Product Catalog</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="productTemplates.html">Product Templates</a></li>
+                <li><a href="fileLibrary.html">File Library</a></li>
+                <li><a href="stores.html">Stores</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="branding.html">Branding</a></li>
+                <li><a href="wallet.html">Wallet</a></li>
+            </ul>
+        </div>
+      </div>
+      </section> 
+
+      <main class="myMainContent">
+        <header class="myOverviewHeader">
+          <div class="search-bar-overview">
+            <i class="fas fa-search"></i><input type="text" placeholder="Search TailorShack">
+          </div>
+  
+          <div class="user-menu">
+            <div class="header-dropdown">
+              <div class="dropdown">
+                <button class="dropdown-toggle">
+                  <i class="fas fa-bell"></i>
+                  <span class="notification-count">2</span>
+                </button>
+                <div class="dropdown-menu">
+                  <ul class="dropdown-list">
+                    <li class="dropdown-item">Notification 1</li>
+                    <li class="dropdown-item">Notification 2</li>
+                    <li class="dropdown-item">See all notifications</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dropdown username-dropdown">
+                <button class="dropdown-toggle">
+                  <i class="fas fa-user"></i>
+                  <span class="username">John Doe</span>
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-menu">
+                  <ul class="dropdown-list">
+                    <li class="dropdown-item">Profile</li>
+                    <li class="dropdown-item">Settings</li>
+                    <li class="dropdown-item">Logout</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button class="new-order-button">New Order</button>
+          </div>
+        </header>
+
+        <section class="orders">
+          <div class="orders-header">
+            <h2 class="orders-title">Orders</h2>
+            <div class="orders-buttons">
+              <button class="orders-import">CSV Import/Export▾</button>
+              <button class="orders-create">Create order</button>
+            </div>
+          </div>
+          <div class="orders-content">
+            <div class="orders-settings">
+              <div class="orders-settings-left">
+                <span class="orders-setting-text">Show: 10</span>
+                <select class="space-select">
+                  <option value="10">10</option>
+                  <option value="25">25</option>
+                  <option value="50">50</option>
+                </select>
+                <span class="orders-setting-text">entries</span>
+              </div>
+              <div class="orders-settings-right">
+                <span class="orders-setting-text">Sort by:</span>
+                <select>
+                  <option value="newest">Newest</option>
+                  <option value="oldest">Oldest</option>
+                  <option value="amount">Amount</option>
+                </select>
+                <label class="orders-setting-toggle active">
+                  <input type="checkbox" class="checkbox">
+                  <span class="orders-setting-text">Descending</span>
+                </label>
+              </div>
+            </div>
+            <div class="orders-details">
+              <h3 class="orders-details-title">Order Details</h3>
+              <div class="orders-search">
+                <input type="text" class="orders-search-input" placeholder="Search orders...">
+              </div>
+              <div class="order-item">
+                <div class="order-item-details">
+                  <span class="order-item-id"><strong>#12345</strong></span>
+                  <span class="order-item-customer">John Doe</span>
+                  <span class="order-item-date">2024-06-30</span>
+                  <span class="order-item-amount">$100.00</span>
+                </div>
+                <div class="order-item-actions">
+                  <a href="#">View</a>
+                  <a href="#">Edit</a>
+                </div>
+              </div>
+              </div>
+          </div>
+
+          <div class="container-my-order">
+            <div class="header-my-order">
+                <h1>TailorShack Orders</h1>
+            </div>
+            <div class="filters">
+                <p>All</p>
+                <p>On hold</p>
+                <p>In production</p>
+                <p>Ready to ship</p>
+                <p>On the way</p>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order</th>
+                            <th>Sent to production</th>
+                            <th>Customer</th>
+                            <th>Total cost</th>
+                            <th>Tracking</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6">Your order list is empty</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="empty-message">
+                    <p>Try ordering product samples and see your products before your customers do.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <footer class="footer-overall-dash">
+          <div class="footer-container-dash">
+            <div class="footer-grid">
+              <div class="footer-section-dash">
+                <h3 class="footer-heading-dash">Services</h3>
+                <ul class="footer-list-dash">
+                  <li class="footer-item-dash"><a href="#">Integrations</a></li>
+                  <li class="footer-item-dash"><a href="#">Shipping Policies</a></li>
+                  <li class="footer-item-dash"><a href="#">Feature Requests</a></li>
+                  <li class="footer-item-dash"><a href="#">Blog</a></li>
+                  <li class="footer-item-dash"><a href="#">FAQ</a></li>
+                  <li class="footer-item-dash"><a href="#">Recent Updates</a></li>
+                </ul>
+              </div>
+              <div class="footer-section-dash">
+                <h3 class="footer-heading-dash">Company</h3>
+                <ul class="footer-list-dash">
+                  <li class="footer-item-dash"><a href="#">About Us</a></li>
+                  <li class="footer-item-dash"><a href="#">Careers</a></li>
+                  <li class="footer-item-dash"><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer-section-dash">
+                <h3 class="footer-heading-dash">Legal</h3>
+                <ul class="footer-list-dash">
+                  <li class="footer-item-dash"><a href="#">Terms & Conditions</a></li>
+                  <li class="footer-item-dash"><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+              <div class="footer-section-dash">
+                <h3 class="footer-heading-dash">Social</h3>
+                <ul class="footer-social-list">
+                  <li class="footer-social-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li class="footer-social-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li class="footer-social-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <p class="copyright">© 2024 TailorShack. All Rights Reserved.</p>
+            </div>
+          </div>
+        </footer>
+        </main>
+      </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

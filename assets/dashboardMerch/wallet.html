@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Character Encoding: Defines the character encoding for the HTML document -->
+    <meta charset="UTF-8">
+    
+    <!-- Compatibility Mode: Ensures proper rendering and functionality in IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Viewport Settings: Sets the viewport to make the website responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Metadata: Keywords, description, and author for search engine optimization -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Kigen Meshack">
+    
+    <!-- Stylesheet: Link to the external CSS file for styling the webpage -->
+    <link rel="stylesheet" href="/assets/styles.css">
+    
+    <!-- Page Title: Title displayed in the browser tab -->
+    <title>TailorShack Custom Merch Design</title>
+    
+    <!-- Preconnect to Google Fonts: Improves performance by preconnecting to the Google Fonts domain -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts: Link to the Poppins font family from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dbfc6bcf24.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <section>
+      <div class="dashboard">
+        <div class="sidebar">
+          <a href="index.html"><img src="/assets/Images/TailorShack2.png" class="logome"></a>
+            <ul>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="productCatalog.html">Product Catalog</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="productTemplates.html">Product Templates</a></li>
+                <li><a href="fileLibrary.html">File Library</a></li>
+                <li><a href="stores.html">Stores</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="branding.html">Branding</a></li>
+                <li><a href="wallet.html">Wallet</a></li>
+            </ul>
+        </div>
+      </div>
+      </section> 
+
+      <main class="myMainContent">
+        <header class="myOverviewHeader">
+          <div class="search-bar-overview">
+            <i class="fas fa-search"></i><input type="text" placeholder="Search TailorShack">
+          </div>
+  
+          <div class="user-menu">
+            <div class="header-dropdown">
+              <div class="dropdown">
+                <button class="dropdown-toggle">
+                  <i class="fas fa-bell"></i>
+                  <span class="notification-count">2</span>
+                </button>
+                <div class="dropdown-menu">
+                  <ul class="dropdown-list">
+                    <li class="dropdown-item">Notification 1</li>
+                    <li class="dropdown-item">Notification 2</li>
+                    <li class="dropdown-item">See all notifications</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dropdown username-dropdown">
+                <button class="dropdown-toggle">
+                  <i class="fas fa-user"></i>
+                  <span class="username">John Doe</span>
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-menu">
+                  <ul class="dropdown-list">
+                    <li class="dropdown-item">Profile</li>
+                    <li class="dropdown-item">Settings</li>
+                    <li class="dropdown-item">Logout</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button class="new-order-button">New Order</button>
+          </div>
+        </header>
+
+        <section>
+          <div class="payment-heading">
+            <h1>Payment Details</h1>
+          </div>
+        </section>
+
+        <section>
+          <div class="payment-balance">
+            <div>
+              <img src="/assets/Images/Balance of payments black glyph icon.jpeg">
+            </div>
+
+            <div>
+              <h4>TailorShack Balance</h4>
+              <p><i class="fa-solid fa-circle-check"></i> Streamlined costs: Cover orders & production with ease.</p>
+              <p><i class="fa-solid fa-circle-check"></i> Faster fulfillment: No cards, just get paid, ship fast.</p>
+              <p><i class="fa-solid fa-circle-check"></i> Save on fees: Skip cards, keep more profit.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="current-balance">
+            <div>
+              <h5>Current Balance</h5>
+              <p>KSHS 0.00</p>
+              <p>Pay with:</p>
+              <button type="button" class="payment-btn"><i class="fa-brands fa-paypal"></i> PayPal</button><br>
+              <button type="button" class="payment-btn"><img src="/assets/Images/32px-M-PESA_LOGO-01.svg.png">Mpesa</button>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="payment-method">
+            <div>
+              <h3>Payment Card</h3>
+              <p>Add a credit/debit card for use when there are not enough funds in your TailorShack balance.</p>
+              <p class="card-pg"><i class="fa-solid fa-plus"></i> Add Credit / Debit Card</p>
+            </div>
+          </div>
+
+          <div class="Billing">
+            <div>
+              <h3>Change Billing Currency</h3>
+              <p>The currency you wish to use for billing and invoicing.</p>
+              <p>Select billing currency</p>
+              <select id="billing_currency">
+                <option value="USD" selected>KSH</option>
+                <option value="TSH" selected>TSH</option>
+                <option value="USH" selected>USH</option>
+                <option value="USD" selected>USD</option>
+                <option value="EUR" selected>EUR</option>
+                <option value="CAD" selected>CAD</option>
+                </select>
+                <p>What happens when changing currency from USD?</p>
+                <ul class="change-currency-reasons">
+                  <li><i class="fa-solid fa-square-check"></i> TailorShack balance is disabled, make sure to attach a card.</li>
+                  <li><i class="fa-solid fa-square-check"></i> TailorShack coupons are disabled.</li>
+                  <li><i class="fa-solid fa-square-check"></i> Automatic order approval will charge multiple smaller amounts (per order) opposed to one large daily amount.</li>
+                  <li><i class="fa-solid fa-square-check"></i> The "maximum additional cost per item" will be converted during Order Routing.</li>
+                </ul><br><br>
+                <button type="button" class="currency-btn-again">No, continue with USD</button>
+                <button type="button" class="currency-btn-again">Yes, change</button>
+            </div>
+          </div>
+        </section>
+        </main>
+      </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
