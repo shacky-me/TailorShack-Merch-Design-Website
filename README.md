@@ -11,9 +11,9 @@
 
 Whether you're an individual with a creative spark or a small business looking for branded merchandise, this platform makes the design process simple and enjoyable.
 
-Live demo: [https://abomasal-paper.000webhostapp.com/]
-Project Blog: [https://medium.com/@meshackkiprono12/have-you-ever-envisioned-yourself-walking-down-the-street-in-a-custom-designed-t-shirt-or-any-34094a2f2043]
-Author: Kigen Meshack [https://www.linkedin.com/in/kigen-meshack-7b0356209/]
+- Live demo: [https://abomasal-paper.000webhostapp.com/]
+- Project Blog: [https://medium.com/@meshackkiprono12/have-you-ever-envisioned-yourself-walking-down-the-street-in-a-custom-designed-t-shirt-or-any-34094a2f2043]
+- Author: Kigen Meshack [https://www.linkedin.com/in/kigen-meshack-7b0356209/]
 
 ### Installation:
 
