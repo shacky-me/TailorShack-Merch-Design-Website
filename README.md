@@ -8,11 +8,11 @@ Live demo: [https://abomasal-paper.000webhostapp.com/]
 Project Blog: [https://medium.com/@meshackkiprono12/have-you-ever-envisioned-yourself-walking-down-the-street-in-a-custom-designed-t-shirt-or-any-34094a2f2043]
 Author: Kigen Meshack [https://www.linkedin.com/in/kigen-meshack-7b0356209/]
 
-Installation:
+* Installation:
 
 As a web-based platform, TailorShack does not require any installation on your device. Simply visit the website using any web browser on your computer, tablet or smartphone.
 
-Usage:
+* Usage:
 
 Here's a quick guide to unleashing your inner creativity on this platform:
 
@@ -22,7 +22,7 @@ ii) Product Mockup Generator: See your design come to life! This feature lets yo
 
 iii) Seamless Ordering: Once your masterpiece is complete, the platform guides you through a smooth and secure ordering process. With multiple payment options available, bringing your design to life is effortless.
 
-Contributing
+* Contributing:
 
 The platform is currently still under development, and future features are already in the works! While this initial version focuses on the design aspect and its user-intuitiveness, future plans include:
 i) Implementing user authentication for saving designs, creating profiles, and potentially building a design portfolio.
@@ -30,7 +30,7 @@ ii) Integrating with print-on-demand services to allow users to easily order the
 
 If you have ideas on how to improve TailorShack or want to contribute to its future development, feel free to reach out!
 
-Related Projects:
+* Related Projects:
 
 Here are some otehr projects that share a similar spirit of empowering creativity and user-generated content:
 
@@ -38,7 +38,7 @@ Here are some otehr projects that share a similar spirit of empowering creativit
 2) RedBubble (Print-on-demand marketplace)
 3) Threadless (t-shirt design community)
 
-Licensing:
+* Licensing:
 
 This platform is currently under development and uses an open-source license. I will clearly outline the specific license terms in the code repository soon.
 
