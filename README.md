@@ -5,7 +5,7 @@
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
-* [Related Projects](#Related Projects)
+* [Related Projects](#RelatedProjects)
 * [License](#license)
 * [Screenshots](#Screenshots)
 
