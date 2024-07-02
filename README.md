@@ -2,6 +2,13 @@
 
 ## Turn your design vision into reality with TailorShack Custom Merch! This User-friendly platform empowers anyone to create custom t-shirts, hoodies, tote bags, and more.
 
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Related Projects](#Related Projects)
+* [License](#license)
+* [Screenshots](#Screenshots)
+
 Whether you're an individual with a creative spark or a small business looking for branded merchandise, this platform makes the design process simple and enjoyable.
 
 Live demo: [https://abomasal-paper.000webhostapp.com/]
