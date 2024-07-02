@@ -1,4 +1,4 @@
-##JUST A SNEAK PEEK!!!
+# JUST A SNEAK PEEK!!!
 
 ###Turn your design vision into reality with TailorShack Custom Merch! This User-friendly platform empowers anyone to create custom t-shirts, hoodies, tote bags, and more.
 
