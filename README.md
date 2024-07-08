@@ -50,6 +50,7 @@ Here are some otehr projects that share a similar spirit of empowering creativit
 This platform is currently under development and uses an open-source license. I will clearly outline the specific license terms in the code repository soon.
 
 ### Screenshots:
+<img src="D:\downloads\Screenshots">
 ![Screenshot 2024-06-12 175633](https://github.com/shacky-me/TailorShack-Merch-Design-Website/assets/110165182/8ee8d82b-dbe2-4cee-a447-469741c2335e)
 ![Screenshot 2024-06-12 175617](https://github.com/shacky-me/TailorShack-Merch-Design-Website/assets/110165182/1963c937-80b1-4d8c-828f-59ff4ce4f356)
 ![Screenshot 2024-06-12 175559](https://github.com/shacky-me/TailorShack-Merch-Design-Website/assets/110165182/d71cf987-a38a-4720-bd86-b17940a18a05)
