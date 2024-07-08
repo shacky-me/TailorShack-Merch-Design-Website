@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js" defer type="module"></script>
+    <script type="module" src="SignUp.js" defer type="module"></script>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="Kigen Meshack">
@@ -31,15 +31,15 @@
       </div>
       <div class="input">
         <span>Email Address</span>
-        <input type="email" name="" placeholder="e.g. johndoes@gmail.com" required>
+        <input type="email" id="email" placeholder="e.g. johndoes@gmail.com" required>
       </div>
       <div class="input">
         <span>Password</span>
-        <input type="password" name="" required>
+        <input type="password" id="password" name="" required>
       </div>
       <div class="input">
         <span>Confirm Password</span>
-        <input type="password" name="" required>
+        <input type="password" id="password" name="" required>
       </div>
       <div class="remember-me">
         <label>
@@ -48,7 +48,7 @@
         </label>
       </div>
       <div class="input">
-        <input type="submit" value="Sign Up" name="" id="submit-button">
+        <button type="submit" value="Submit" id="googlebtn" class="google-button">SignUp</button>
       </div>
       <p>Already have an account? <a href="login.html">Login here</a></p>
     </form>
