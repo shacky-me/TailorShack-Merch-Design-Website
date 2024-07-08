@@ -53,6 +53,4 @@ This platform is currently under development and uses an open-source license. I 
 ### Screenshots:
 
 ![Screenshot 2024-06-12 175633](https://github.com/shacky-me/TailorShack-Merch-Design-Website/assets/110165182/8ee8d82b-dbe2-4cee-a447-469741c2335e)
-![Screenshot 2024-06-12 175559](https://github.com/shacky-me/TailorShack-Merch-Design-Website/assets/110165182/d71cf987-a38a-4720-bd86-b17940a18a05)
-![Screenshot 2024-06-12 175815](https://github.com/shacky-me/TailorShack-Merch-Design-Website/assets/110165182/6f6fe314-c43e-4e06-8db0-2cc12cf02c54)
 ![Screenshot 2024-06-12 175751](https://github.com/shacky-me/TailorShack-Merch-Design-Website/assets/110165182/7bd145ec-3826-4028-9e6c-71988076fd4b)
