@@ -16,14 +16,14 @@
 </head>
 
 <body>
-  <section class="container">
+  <section class="myheading">
     <nav class="header">
-      <a href="index.html"><img src="/assets/Images/TailorShack2.png" class="logo"></a>
-      <div>
-        <ul id="navbar">
+      <div class="Navbarside">
+        <ul>
+          <li onclick=hideNavbarside()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="#bfbfcf"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
           <li><a href="Catalog.html">Catalog</a></li>
           <li><a href="HowItWorks.html">How It Works</a></li>
-          <li><a href="Pricing.html">Pricing</a></li>
+          <li><a href="Pricing.html" class="active">Pricing</a></li>
           <li><a href="Services.html">Services</a></li>
           <li><a href="UseCases.html">Use Cases</a></li>
           <li><a href="ContactUs.html">ContactUs</a></li>
@@ -31,12 +31,31 @@
         </ul>
       </div>
 
+      <!-- Logo: Link to the homepage with the site logo -->
+      <li class="Navbarside-btn-menu" onclick=showNavbarside()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      <a href="index.html"><img src="/assets/Images/MERCH.png" class="logo"></a>
+        
+      <!-- Navigation Links: Primary site navigation -->
+      <div id="navbar">
+        <ul>
+          <li class="hideOnMobile"><a href="Catalog.html">Catalog</a></li>
+          <li class="hideOnMobile"><a href="HowItWorks.html">How It Works</a></li>
+          <li class="hideOnMobile"><a href="Pricing.html" class="active">Pricing</a></li>
+          <li class="hideOnMobile"><a href="Services.html">Services</a></li>
+          <li class="hideOnMobile"><a href="UseCases.html">Use Cases</a></li>
+          <li class="hideOnMobile"><a href="ContactUs.html">ContactUs</a></li>
+          <li class="hideOnMobile"><a href="Blog.html">Blog</a></li>
+        </ul>
+      </div>
+  
+      <!-- Authentication Buttons: Log in and Sign up options -->
       <div class="auth-btn">
         <a href="Login.html"><button class="btn-1">Log in</button></a>
         <a href="SignUp.html"><button class="btn-2">Sign Up</button></a>
       </div>
     </nav>
   </section>
+  
 
   <main>
     <section>
@@ -51,7 +70,7 @@
         </div>
 
         <div>
-          <img src="/assets/Images/388542cc-6989-409a-9743-2767e7e14eff.jpeg" alt="pricing illustration">
+          <img src="/assets/Images/Bonecas de pano que trabalham com caixas _ Foto Grátis.jpeg" alt="pricing illustration">
         </div>
       </div>
     </section>
@@ -63,7 +82,7 @@
           <div class="plan-header">
             <h3>FREE</h3>
             <p>For merchants starting a business</p>
-            <p class="price" style="font-weight: 900; background-color: rgb(0, 136, 106); border-radius: 50px;">KSH 0 / month</p>
+            <p class="price">KSH 0 / month</p>
             <p><b>Unlimited</b> product designs</p>
           </div>
 
@@ -83,7 +102,7 @@
           <div class="plan-header">
             <h3>Premium</h3>
             <p>For merchants with growing sales</p>
-            <p class="price" style="font-weight: 900; background-color: rgb(245, 202, 202); border-radius: 50px;">Kshs 1800 / month</p>
+            <p class="price">Kshs 1800 / month</p>
             <p>Billed annually</p>
             <p><b>Unlimited product designs</b></p>
             <p>up to 20% discount on all products</p>
@@ -105,7 +124,7 @@
           <div class="plan-header">
             <h3>Enterprise</h3>
             <p>For merchants with significant daily sales</p>
-            <p class="price" style="font-weight: 900; background-color: rgb(154, 210, 224); border-radius: 50px;">Kshs 5000 / month</p>
+            <p class="price">Kshs 5000 / month</p>
             <p>Unlimited stores per account</p>
             <p>Unlimited product designs</p>
           </div>
@@ -193,5 +212,16 @@
       <p><span class="copyright"> &copy; 2024 TailorShack, Inc. All rights reserved.</span></p>
     </div>
   </footer>
+  <script>
+    function showNavbarside(){
+      const Navbarside = document.querySelector('.Navbarside')
+      Navbarside.style.display = 'flex'
+    }
+    function hideNavbarside() {
+      const Navbarside = document.querySelector('.Navbarside')
+      Navbarside.style.display = 'none'
+    }
+  </script>
+  
 </body>
 </html>

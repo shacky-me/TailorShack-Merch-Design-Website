@@ -37,32 +37,44 @@
   the site logo, primary navigation links, and authentication buttons for 
   logging in and signing up.
 -->
-    <section class="myheading">
-    <nav class="header">
+<section class="myheading">
+  <nav class="header">
+    <div class="Navbarside">
+      <ul>
+        <li onclick=hideNavbarside()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="#bfbfcf"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="Catalog.html">Catalog</a></li>
+        <li><a href="HowItWorks.html">How It Works</a></li>
+        <li><a href="Pricing.html">Pricing</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="UseCases.html">Use Cases</a></li>
+        <li><a href="ContactUs.html">ContactUs</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <!-- Logo: Link to the homepage with the site logo -->
+    <li class="Navbarside-btn-menu" onclick=showNavbarside()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    <a href="index.html"><img src="/assets/Images/MERCH.png" class="logo"></a>
 
-      <!-- Logo: Link to the homepage with the site logo -->
-      <a href="index.html"><img src="/assets/Images/TailorShack2.png" class="logo"></a>
-      
-      <!-- Navigation Links: Primary site navigation -->
-      <div>
-        <ul id="navbar">
-          <li><a href="Catalog.html">Catalog</a></li>
-          <li><a href="HowItWorks.html">How It Works</a></li>
-          <li><a href="Pricing.html">Pricing</a></li>
-          <li><a href="Services.html">Services</a></li>
-          <li><a href="UseCases.html">Use Cases</a></li>
-          <li><a href="ContactUs.html">ContactUs</a></li>
-          <li><a href="Blog.html">Blog</a></li>
-        </ul>
-      </div>
+    <!-- Navigation Links: Primary site navigation -->
+    <div id="navbar">
+      <ul>
+        <li class="hideOnMobile"><a href="Catalog.html">Catalog</a></li>
+        <li class="hideOnMobile"><a href="HowItWorks.html">How It Works</a></li>
+        <li class="hideOnMobile"><a href="Pricing.html">Pricing</a></li>
+        <li class="hideOnMobile"><a href="Services.html">Services</a></li>
+        <li class="hideOnMobile"><a href="UseCases.html">Use Cases</a></li>
+        <li class="hideOnMobile"><a href="ContactUs.html">ContactUs</a></li>
+        <li class="hideOnMobile"><a href="Blog.html">Blog</a></li>
+      </ul>
+    </div>
 
-      <!-- Authentication Buttons: Log in and Sign up options -->
-      <div class="auth-btn">
-        <a href="Login.html"><button class="btn-1">Log in</button></a>
-        <a href="SignUp.html"><button class="btn-2">Sign Up</button></a>
-      </div>
-    </nav>
-    </section>
+    <!-- Authentication Buttons: Log in and Sign up options -->
+    <div class="auth-btn">
+      <a href="Login.html"><button class="btn-1">Log in</button></a>
+      <a href="SignUp.html"><button class="btn-2">Sign Up</button></a>
+    </div>
+  </nav>
+</section>
 
     <main>
     
@@ -73,21 +85,29 @@
   and an image. The purpose of this section is to quickly convey the 
   value proposition of TailorShack and encourage visitors to take action.
 -->
-    <section>
-    <div class="container-custom7">
-      <div class="myohcolumn">
-          <h1>Create and Sell Custom Merchandise with us</h1>
-          <p>TailorShack is the easiest way to design, sell and<br> order premium custom merchandise.</p>
-          <a href="SignUp.html"><button class="btn-3">Start now for free</button></a>
-          <a href="sales.html"><button class="btn-3">Contact Sales</button></a>
-          <p>We've got all your custom needs covered</p>
-        </div>
+<!-- 
+  Hero Section
+  This section serves as the main introductory banner of the webpage.
+  It contains a headline, a brief description, call-to-action buttons, 
+  and an image. The purpose of this section is to quickly convey the 
+  value proposition of TailorShack and encourage visitors to take action.
+-->
+<section>
+  <div class="container-custom7">
+    <div class="myohcolumn">
+      <h1>Create and Sell Custom Merchandise with us</h1>
+      <p>TailorShack is the easiest way to design, sell and<br> order premium custom merchandise.</p>
+      <a href="SignUp.html"><button class="btn-3">Start now for free</button></a>
+      <a href="sales.html"><button class="btn-3">Contact Sales</button></a>
+      <p>We've got all your custom needs covered</p>
+    </div>
 
-        <div class="mycolumn">
-          <img src="/assets/Images/T-shirts - Clothing - Man - PULL&BEAR Denmark.jpeg" alt="">
-        </div>
-      </div>
-    </section>  
+    <div class="mycolumn">
+      <img src="/assets/Images/Rise Shine Hustle Grind svg_ Hustle svg _ Grind svg _ Urban svg _ Trending shirt svg _ Digital Download _.jpeg" alt="">
+    </div>
+  </div>
+</section>
+  
     
     <!-- 
   Merchandising Features Section
@@ -124,42 +144,41 @@
           <h3>Premium Products, Lasting Impressions</h3>
           <p>At TailorShack, we don't compromise on quality. We use only the finest materials and printing techniques to ensure your merchandise looks and feels amazing. Your customers will appreciate the difference!</p>
           
-          <!
           <img src="/assets/Images/Swag _ Elevate Conference.jpeg" width="" height="">
         </div>
       </div>
     </section>
 
-    <!-- 
+<!-- 
   About Us Section
   This section introduces TailorShack, highlighting the company's passion 
   for empowering individuals and businesses to create custom merchandise. 
   It includes an image and a welcoming message, along with a description 
   of the platform's features and benefits.
 -->
-    <section>
-      <div class="about-us">
-        <!-- About Us Image: Visual representation related to branding or merchandise -->
-        <div class="about-image">
-          <img src="/assets/Images/Green Branding Projects __ Photos, videos, logos, illustrations and branding.jpeg">
-        </div>
+<section>
+  <div class="about-us">
+    <!-- About Us Image: Visual representation related to branding or merchandise -->
+    <div class="about-image">
+      <img src="/assets/Images/Green Branding Projects __ Photos, videos, logos, illustrations and branding.jpeg" alt="About Us">
+    </div>
 
-        <!-- About Us Text: Introduction and platform features -->
-        <div>
-          <!-- Welcoming Message -->
-          <h4>So, Hey there, Nice to meet you!</h4>
-          
-          <!-- Description: Empowerment and platform capabilities -->
-          <p>**We're passionate about empowering individuals like <span class="spanme">YOU</span> and businesses like <span class="spanme">YOURS</span> to bring their creative merch visions to life.  From brainstorming ideas to crafting high-quality products, TailorShack is your one-stop shop for custom merchandise design.**</p>
-          
-          <!-- Platform Features -->
-          <br><p>**Our user-friendly platform makes creating merch a breeze, no design experience required.  Our extensive template library and intuitive design tools allow you to customize everything from t-shirts and hoodies to mugs and phone cases.  We offer a wide variety of printing techniques to ensure your merch looks and feels amazing.**</p>
-          
-          <!-- Target Audience: Musicians, small businesses, and individuals -->
-          <br><p>**Whether you're a musician with a killer logo, a small business with a unique brand identity, or just someone who wants to express themselves with personalized clothing, we're here to help you create merch that stands out.**</p>
-        </div>
-      </div>
-    </section>
+    <!-- About Us Text: Introduction and platform features -->
+    <div>
+      <!-- Welcoming Message -->
+      <h4>So, Hey there, Nice to meet you!</h4>
+      
+      <!-- Description: Empowerment and platform capabilities -->
+      <p>**We're passionate about empowering individuals like <span class="spanme">YOU</span> and businesses like <span class="spanme">YOURS</span> to bring their creative merch visions to life.  From brainstorming ideas to crafting high-quality products, TailorShack is your one-stop shop for custom merchandise design.**</p>
+      
+      <!-- Platform Features -->
+      <br><p>**Our user-friendly platform makes creating merch a breeze, no design experience required.  Our extensive template library and intuitive design tools allow you to customize everything from t-shirts and hoodies to mugs and phone cases.  We offer a wide variety of printing techniques to ensure your merch looks and feels amazing.**</p>
+      
+      <!-- Target Audience: Musicians, small businesses, and individuals -->
+      <br><p>**Whether you're a musician with a killer logo, a small business with a unique brand identity, or just someone who wants to express themselves with personalized clothing, we're here to help you create merch that stands out.**</p>
+    </div>
+  </div>
+</section>
 
     <!-- 
   Global Reach Feature Section
@@ -266,7 +285,22 @@
     <p><span class="copyright"> &copy; 2024 TailorShack, Inc. All rights reserved.</span></p>
   </div>
 </footer>
+<script>
+  function showNavbarside(){
+    const Navbarside = document.querySelector('.Navbarside')
+    Navbarside.style.display = 'flex'
+  }
+  function hideNavbarside() {
+    const Navbarside = document.querySelector('.Navbarside')
+    Navbarside.style.display = 'none'
+  }
+</script>
 
+<!-- <script>
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.getElementById('navbar').classList.toggle('active');
+  });
+</script> -->
   </body>
 
 </html>
