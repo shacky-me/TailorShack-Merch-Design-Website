@@ -5992,3 +5992,157 @@ button:focus {
       /* bottom: 0; */
   }
 }
+
+
+/* +++++ Footer Section Styles: Covers layout, typography, and links for the footer area +++++ */
+/* Shipping rates section */
+.shipping-header {
+  display: flex;
+  padding-top: 150px;
+  width: 100%;
+}
+.shipping-header h1 {
+  color: #141414;
+  margin: auto;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+
+.shipment-idea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 100px 50px 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.shipment-idea > div {
+  margin: auto;
+  width: 50%;
+  line-height: 1.5;
+}
+
+.shipment-idea > div img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+}
+
+.shipment-idea > div h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 800;
+  font-size: 1.3em;
+}
+
+.shipment-idea > div p {
+  font-weight: 200;
+}
+
+hr {
+  background-color: #e7e7e7;
+  height: 3px;
+}
+
+.shippingrates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.shippingrates > div {
+  line-height: 1.5;
+  width: 50%;
+}
+
+.shippingrates > div p {
+  margin-left: auto;
+  margin-top: auto;
+  font-weight: 200;
+  font-size: 1em;
+  width: 75%;
+}
+
+.shippingrates > div img {
+  width: 70%;
+  margin-left: 90px;
+  margin-top: auto;
+}
+
+@media (max-width:992px) {
+  .shipping-header {
+    width: 70%;
+    margin: auto;
+    padding-top: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .shipping-header h1 {
+    word-wrap: break-word;
+    text-align: center;
+  }
+  
+  .shipment-idea {
+    padding: 10px 100px 50px 100px;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .shipment-idea > div {
+    margin: auto;
+    width: 50%;
+    line-height: 1.5;
+  }
+  
+  .shipment-idea > div img {
+    width: 80px;
+    height: auto;
+    margin: auto;
+    display: flex;
+  }
+  
+  .shipment-idea > div h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 1.3em;
+  }
+  
+  .shipment-idea > div p {
+    font-weight: 200;
+    width: 100%;
+    text-align: start;
+  }
+  
+  hr {
+    background-color: #e7e7e7;
+    height: 3px;
+  }
+  
+  .shippingrates {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .shippingrates > div {
+    line-height: 1.5;
+    width: 50%;
+  }
+  
+  .shippingrates > div p {
+    margin-left: auto;
+    margin-top: auto;
+    width: 100%;
+    text-align: start;
+  }
+  
+  .shippingrates > div img {
+    width: 80%;
+    margin-left: 90px;
+    margin-top: auto;
+  }
+}

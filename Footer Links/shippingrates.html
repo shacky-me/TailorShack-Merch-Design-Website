@@ -33,8 +33,99 @@
   <script src="https://kit.fontawesome.com/dbfc6bcf24.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <header>
+    <section class="myheading">
+      <nav class="header">
+        <div class="Navbarside">
+          <ul>
+            <li onclick=hideNavbarside()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="#bfbfcf"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="/html/Catalog.html">Catalog</a></li>
+            <li><a href="/html/HowItWorks.html">How It Works</a></li>
+            <li><a href="/html/Pricing.html">Pricing</a></li>
+            <li><a href="/html/">Services</a></li>
+            <li><a href="/html/UseCases.html">Use Cases</a></li>
+            <li><a href="/html/ContactUs.html">ContactUs</a></li>
+            <li><a href="/html/Blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <!-- Logo: Link to the homepage with the site logo -->
+        <li class="Navbarside-btn-menu" onclick=showNavbarside()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        <a href="/html/index.html"><img src="/assets/Images/MERCH.png" class="logo"></a>
+    
+        <!-- Navigation Links: Primary site navigation -->
+        <div id="navbar">
+          <ul>
+            <li class="hideOnMobile"><a href="/html/Catalog.html">Catalog</a></li>
+            <li class="hideOnMobile"><a href="/html/HowItWorks.html">How It Works</a></li>
+            <li class="hideOnMobile"><a href="/html/Pricing.html">Pricing</a></li>
+            <li class="hideOnMobile"><a href="/html/Services.html">Services</a></li>
+            <li class="hideOnMobile"><a href="/html/UseCases.html">Use Cases</a></li>
+            <li class="hideOnMobile"><a href="/html/ContactUs.html">ContactUs</a></li>
+            <li class="hideOnMobile"><a href="/html/Blog.html">Blog</a></li>
+          </ul>
+        </div>
+    
+        <!-- Authentication Buttons: Log in and Sign up options -->
+        <div class="auth-btn">
+          <a href="/html/Login.html"><button class="btn-1">Log in</button></a>
+          <a href="/html/SignUp.html"><button class="btn-2">Sign Up</button></a>
+        </div>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+    <section>
+      <div class="shipping-header">
+        <h1>Getting your orders where they need to go</h1>
+      </div>
+      <div class="shipment-idea">
+        <div>
+          <img src="/Footer Links/imagesfooter/right.png">
+          <h1>Fulfillment</h1>
+          <p>It takes 2-5 business days to create a product and fulfill an order</p>
+        </div>
+        <div>
+          <img src="/Footer Links/imagesfooter/delivery-bike.png">
+          <h1>Shipping</h1>
+          <p>Shipping time depends on product availability and delivery destination</p>
+        </div>
+        <div>
+          <img src="/Footer Links/imagesfooter/transport.png">
+          <h1>Delivery</h1>
+          <p>Once an order is fulfilled and shipped, it’s delivered to the end address</p>
+        </div>
+      </div>
+      <hr>
+
+      <div class="shipping-header">
+        <h1>Getting TailorShack shipping rates for all products around your region</h1>
+      </div>
+
+      <div class="shippingrates">
+        <div>
+          <p>To set up a profitable pricing strategy when using on-demand services, there are two prices to take into account—product and shipping. Both will get charged for each order your customers make.</p>
+          
+          <p>The shipping categories below contain products that have similar dimensions, weight, and packaging. In some cases, like for Bags,Mugs, and Posters,subcategories provide more exact rates.</p>
+          
+          <p>Our fixed Standard shipping rates are calculated based on the average shipping cost for each product category. The previous table gives shipping rates and estimated times for your selling region, and here you can see all categories and shipping regions at once.</p>
+        </div>
+
+        <div>
+          <img src="/Footer Links/imagesfooter/shipping-rates-new.svg">
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    function showNavbarside(){
+      const Navbarside = document.querySelector('.Navbarside')
+      Navbarside.style.display = 'flex'
+    }
+    function hideNavbarside() {
+      const Navbarside = document.querySelector('.Navbarside')
+      Navbarside.style.display = 'none'
+    }
+  </script>
 </body>
 </html>
