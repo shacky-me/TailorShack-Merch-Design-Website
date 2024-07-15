@@ -35,53 +35,89 @@
 
     <section>
       <div class="navbar-my-temp">
-        <a href="/assets/dashboardMerch/productTemplates.html"><img src="/assets/Images/TailorShack2.png" class="logome"></a>
+        <a href="/assets/dashboardMerch/productTemplates.html"><img src="/assets/Images/MERCH.png" class="logome"></a>
         <div class="search-bar-my-temp">
-            <input type="text" placeholder="I am looking for...">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.44 0a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/>
-            </svg>
+          <input type="text" placeholder="I am looking for...">
         </div>
-        <div class="nav-links-my-temp">
-            <a href="newproducts.html">New Products</a>
-            <a href="bestsellers.html">Best Sellers</a>
-            <div class="dropdown-temp">
-                <a href="apparel.html">Apparel ▼</a>
-                <div class="dropdown-content-temp">
-                    <a href="tshirts.html">T-Shirts</a>
-                    <a href="hoodies.html">Hoodies</a>
-                    <a href="jackets.html">Jackets</a>
-                </div>
+        <div class="nav-links-my-temp hideOnMobile">
+          <a href="newproducts.html" class="hideOnMobile">New Products</a>
+          <a href="bestsellers.html" class="hideOnMobile">Best Sellers</a>
+          <div class="dropdown-temp">
+            <a href="javascript:void(0)" class="dropbtn hideOnMobile">Apparel ▼</a>
+            <div class="dropdown-content-temp">
+              <a href="tshirts.html" class="hideOnMobile">T-Shirts</a>
+              <a href="hoodies.html" class="hideOnMobile">Hoodies</a>
+              <a href="jackets.html" class="hideOnMobile">Jackets</a>
             </div>
-            <a href="hats.html">Hats</a>
-            <a href="digital.html">Digital</a>
-            <div class="dropdown-temp">
-                <a href="home_decor.html">Home and Decor ▼</a>
-                <div class="dropdown-content-temp">
-                    <a href="wallart.html">Wall Art</a>
-                    <a href="pillows.html">Pillows</a>
-                    <a href="blankets.html">Blankets</a>
-                </div>
+          </div>
+          <a href="hats.html" class="hideOnMobile">Hats</a>
+          <div class="dropdown-temp">
+            <a href="javascript:void(0)" class="dropbtn hideOnMobile">Home and Decor ▼</a>
+            <div class="dropdown-content-temp">
+              <a href="wallart.html" class="hideOnMobile">Wall Art</a>
+              <a href="pillows.html" class="hideOnMobile">Pillows</a>
+              <a href="blankets.html" class="hideOnMobile">Blankets</a>
             </div>
-            <div class="dropdown-temp">
-                <a href="accessories.html">Accessories ▼</a>
-                <div class="dropdown-content-temp">
-                    <a href="bags.html">Bags</a>
-                    <a href="phonecases.html">Phone Cases</a>
-                    <a href="socks.html">Socks</a>
-                </div>
+          </div>
+          <div class="dropdown-temp">
+            <a href="javascript:void(0)" class="dropbtn hideOnMobile">Accessories ▼</a>
+            <div class="dropdown-content-temp">
+              <a href="bags.html" class="hideOnMobile">Bags</a>
+              <a href="phonecases.html" class="hideOnMobile">Phone Cases</a>
+              <a href="socks.html" class="hideOnMobile">Socks</a>
             </div>
-            <a href="collections.html">Collections</a>
+          </div>
+          <a href="/assets/dashboardMerch/orders.html" class="order-samples-temp hideOnMobile">Order Samples</a>
+        </div>
+        <button class="toggle-btn" onclick="toggleSidebar()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+          </svg>
+        </button>
+      </div>
+      
+      <div id="mobile-sidebar" class="mobile-sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="#bfbfcf">
+            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+          </svg>
+        </a>
+        <a href="newproducts.html">New Products</a>
+        <a href="bestsellers.html">Best Sellers</a>
+        <div class="dropdown-temp">
+          <a href="javascript:void(0)" class="dropbtn">Apparel ▼</a>
+          <div class="dropdown-content-temp">
+            <a href="tshirts.html">T-Shirts</a>
+            <a href="hoodies.html">Hoodies</a>
+            <a href="jackets.html">Jackets</a>
+          </div>
+        </div>
+        <a href="hats.html">Hats</a>
+        <div class="dropdown-temp">
+          <a href="javascript:void(0)" class="dropbtn">Home and Decor ▼</a>
+          <div class="dropdown-content-temp">
+            <a href="wallart.html">Wall Art</a>
+            <a href="pillows.html">Pillows</a>
+            <a href="blankets.html">Blankets</a>
+          </div>
+        </div>
+        <div class="dropdown-temp">
+          <a href="javascript:void(0)" class="dropbtn">Accessories ▼</a>
+          <div class="dropdown-content-temp">
+            <a href="bags.html">Bags</a>
+            <a href="phonecases.html">Phone Cases</a>
+            <a href="socks.html">Socks</a>
+          </div>
         </div>
         <a href="/assets/dashboardMerch/orders.html" class="order-samples-temp">Order Samples</a>
-    </div>
+      </div>
 
     </section>
 
     <section>
       <div class="product-grid-my-temp">
         <div class="product-item-my-temp">
-            <a href="design_merch.html"><img src="/assets/Images/Mens Casual Hooded Sweatshirts Long Sleeve Plain Pullover Hoodie Classic Tops.jpeg" alt="casual hoodie"></a>
+            <a href="design_merch.html"><img src="/assets/Images/NewProductImages/_Emotional Baggage_ Tote Bag for Sale by Kinzughi _ Redbubble.jpg" alt="casual hoodie"></a>
             <div class="product-title-my-temp">Mens Casual Hooded Sweatshirts Long Sleeve Plain Pullover Hoodie</div>
             <div class="product-desc-my-temp">Mens Casual Hooded Sweatshirts Long Sleeve Plain Pullover Hoodie Classic Tops</div>
             <div class="product-cost-my-temp">Base cost Kshs 2500</div>
@@ -97,7 +133,7 @@
         </div>
 
         <div class="product-item-my-temp">
-          <a href="design_merch.html"><img src="/assets/Images/Essential Elbow-Sleeve Tee _ Garnet Hill.jpeg" alt="Women's Classic Tee"></a>
+          <a href="design_merch.html"><img src="/assets/Images/NewProductImages/Treat People With Kindness Tote Bag Harry Styles Tote Bag - Etsy.jpg" alt="Women's Classic Tee"></a>
             <div class="product-title-my-temp">Women's Classic Tee</div>
             <div class="product-desc-my-temp">Classic fit, 100% Cotton</div>
             <div class="product-cost-my-temp">Base cost $20.11</div>
@@ -113,7 +149,7 @@
         </div>
 
         <div class="product-item-my-temp">
-          <a href="design_merch.html"><img src="/assets/Images/Introverted But Willing To Discuss Plants Plant Mom Mug - 11oz Pink Coloured Inner.jpeg" alt="Mug"></a>
+          <a href="design_merch.html"><img src="/assets/Images/NewProductImages/1 Capa de Telefone Macia Antiquedas TPU com Pintura Precisa de Furo Recto, Compatível com IPhone,Para Galaxy S22_Galaxy A13 4G_ Galaxy A52_A52s 5G, Compatível com Xiaomi Redmi Note11_ Xiaomi 11.jpg" alt="Mug"></a>
             <div class="product-title-my-temp">Mug</div>
             <div class="product-desc-my-temp">STANDARD & CERAMIC CAMPER MUGSAvailable in two sizes we offer a premium grade 11oz Standard Sized & 8oz Ceramic Camper (with black-lip design)</div>
             <div class="product-cost-my-temp">Base cost $17.45</div>
@@ -129,7 +165,7 @@
         </div>
 
         <div class="product-item-my-temp">
-          <a href="design_merch.html"><img src="/assets/Images/MONCLER COLLECTION Embroidered Logo Hoodie Black Size XS.jpeg" alt="Unisex Premium Pullover Hoodie"></a>
+          <a href="design_merch.html"><img src="/assets/Images/NewProductImages/I AM FASHIONISTA Phone Case _ Fashion.jpg" alt="Unisex Premium Pullover Hoodie"></a>
             <div class="product-title-my-temp">Unisex Premium Pullover Hoodie</div>
             <div class="product-desc-my-temp">Relaxed fit, 80% Cotton, 20% Polyester </div>
             <div class="product-cost-my-temp">Base cost $25.23</div>
@@ -144,7 +180,7 @@
         </div>
 
         <div class="product-item-my-temp">
-          <a href="design_merch.html"><img src="/assets/Images/KNITID CREW NECK TEE - T-shirts basic - sleek black.jpeg" alt="Classic Crew Neck T-Shirt"></a>
+          <a href="design_merch.html"><img src="/assets/Images/NewProductImages/Moser Logo iPhone Case - iPhone 12 Pro _ Glossy.jpg" alt="Classic Crew Neck T-Shirt"></a>
           <div class="product-title-my-temp">Classic Crew Neck T-Shirt</div>
           <div class="product-desc-my-temp">Classic fit, 100% Cotton </div>
           <div class="product-cost-my-temp">Base cost $25.23</div>
@@ -159,7 +195,7 @@
         </div>
 
         <div class="product-item-my-temp">
-          <a href="design_merch.html"><img src="/assets/Images/Pain and Pleasure T-shirt.jpeg " alt="Next Level 3600 | Premium Ring-Spun Cotton T-Shirt"></a>
+          <a href="design_merch.html"><img src="/assets/Images/NewProductImages/Basquiat Dino Crew Sock.jpg " alt="Next Level 3600 | Premium Ring-Spun Cotton T-Shirt"></a>
           <div class="product-title-my-temp">Next Level 3600 | Premium Ring-Spun Cotton T-Shirt</div>
           <div class="product-desc-my-temp">Slim fit, 100% Combed Ringspun Cotton </div>
           <div class="product-cost-my-temp">Base cost $25.23</div>
@@ -174,7 +210,7 @@
         </div>
 
         <div class="product-item-my-temp">
-          <a href="design_merch.html"> <img src="/assets/Images/Farmerish - Comfort Tee - 3XLarge _ Green _ Tee.jpeg" alt="Comfort Tee"></a>
+          <a href="design_merch.html"> <img src="/assets/Images/NewProductImages/Boxt Socks Burger Multi.jpg" alt="Comfort Tee"></a>
           <div class="product-title-my-temp">Comfort Tee</div>
           <div class="product-desc-my-temp">Slim fit, 100% Cotton </div>
           <div class="product-cost-my-temp">Base cost $25.23</div>
@@ -189,7 +225,7 @@
         </div>
 
         <div class="product-item-my-temp">
-          <a href="design_merch.html"> <img src="/assets/Images/Custom Die-Cut Sticker Pages _ Any Shape.jpeg" alt="Die Cut Sticker"></a>
+          <a href="design_merch.html"> <img src="/assets/Images/NewProductImages/1pair Men's Mid-calf Socks With Expression Pattern, Anti-odor & Moisture-wicking For Casual & Sports.jpg" alt="Die Cut Sticker"></a>
           <div class="product-title-my-temp">Die Cut Sticker</div>
           <div class="product-desc-my-temp">Gloss finish, laminated 6 mil Vinyl </div>
           <div class="product-cost-my-temp">Base cost $25.23</div>
@@ -204,7 +240,7 @@
         </div>
 
         <div class="product-item-my-temp">
-          <a href="design_merch.html"> <img src="/assets/Images/Is A Kindle The Right Choice For You_ - My Kindle Paperwhite 2019 Review - Ellis Tuesday.jpeg" alt="E-book"></a>
+          <a href="design_merch.html"> <img src="/assets/Images/NewProductImages/Men's Accessories - Backpacks + Watches.jpg" alt="E-book"></a>
           <div class="product-title-my-temp">E-book</div>
           <div class="product-desc-my-temp"></div>
           <div class="product-cost-my-temp">Base cost $25.23</div>
@@ -323,9 +359,8 @@
             <span>+8</span>
           </div>
         </div>
-
-
       </div>
     </section> 
+    <script src="/assets/dashboardMerch/script.js" defer></script>
   </body>
 </html>
