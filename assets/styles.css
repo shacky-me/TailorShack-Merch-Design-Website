@@ -5855,56 +5855,48 @@ button:focus {
 }
 
 /* Now we build the important section: the design area */
-
+/* Container styles */
 .design-container {
   display: flex;
-  width: 100%;
-  /* max-width: 1200px; */
-  padding: 80px;
-  background-color: #ffffff;
-  /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 .design-cnt-sidebar {
   flex: 1;
   padding: 20px;
-  position: fixed;
-  margin:0 auto auto auto;
   border-right: 1px solid #eaeaea;
+  background-color: #ffffff;
 }
 
 .design-main {
   flex: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  margin-left: 100px;
 }
 
-#h2-heading {
+/* Heading and paragraph styles */
+.h2-heading {
   color: #003852;
-  font-style: normal;
+  font-size: 1.5rem;
 }
 
-#p-pg {
+.p-pg {
   color: #2c3e50;
   font-size: 16px;
   font-weight: 500;
 }
 
-.design-upload-buttons, .design-color-options, .design-pricing-options, .view-buttons {
-  margin:0 auto auto auto;
-}
-
-.design-upload-buttons button, .design-pricing-options button, .view-buttons button {
-  display: flex;
-  justify-content: flex-start;
-  margin: 10px auto;
-  flex-direction: row;
+/* Button styles */
+.design-upload-buttons button,
+.view-buttons button,
+.continue {
+  display: block;
+  width: 100%;
   padding: 12px 20px;
-  width: 25%;
+  margin-bottom: 10px;
   border: none;
   border-radius: 30px;
   background-color: #000;
@@ -5912,14 +5904,17 @@ button:focus {
   cursor: pointer;
 }
 
-.design-upload-buttons button:hover, .design-pricing-options button:hover, .view-buttons button:hover {
+.design-upload-buttons button:hover,
+.view-buttons button:hover,
+.continue:hover {
   background-color: #333;
 }
 
+/* Color options styles */
 .design-color-options {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .design-color-option {
@@ -5930,44 +5925,70 @@ button:focus {
   cursor: pointer;
 }
 
-.color1 { background-color: #000; }
-.color2 { background-color: #1a1a1a; }
-.color3 { background-color: #333; }
-.color4 { background-color: #666; }
-.color5 { background-color: #999; }
-.color6 { background-color: #ccc; }
-.color7 { background-color: #fff; }
-.color8 { background-color: #f00; }
-.color9 { background-color: #0f0; }
+/* T-shirt view styles */
+.tshirt-view {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
 
-.continue {
+.tshirt-view img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjust styles for text input and apply text button */
+#text-input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 200px;
+}
+
+.apply-text {
   padding: 10px 20px;
   background-color: #000;
   color: #fff;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
-  width: 100%;
-  border-radius: 20px;
+  transition: background-color 0.3s ease;
 }
 
-.continue:hover {
+.apply-text:hover {
   background-color: #333;
 }
 
-.tshirt-view {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  /* border: 1px solid #eaeaea; */
-  padding: 12px 20px;
-  /* background-color: #f9f9f9; */
-}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .design-container {
+      flex-direction: column;
+  }
+  
+  .design-cnt-sidebar {
+      position: relative;
+      flex: initial;
+      width: 100%;
+      margin-bottom: 20px;
+      border-right: none;
+  }
 
-.tshirt-view img {
-  width: 50%;
-  height: 100%;
-  position: fixed;
-  bottom: 0;
-  right: 0;
+  .design-main {
+      flex: initial;
+      width: 100%;
+  }
+
+  .tshirt-view {
+      margin-top: 20px;
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+      /* bottom: 0; */
+  }
 }

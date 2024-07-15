@@ -34,41 +34,83 @@
   <body>
     <section>
       <div class="design-container">
-        <div class="design-cnt-sidebar">
-            <h2 id="h2-heading">Design your product *</h2>
-            <p id="p-pg">Max file size of 50MB</p>
-            <div class="design-upload-buttons">
-                <button class="add-image">Add Image</button>
-                <button class="add-text">Add Text</button>
-            </div>
-            <h2 id="h2-heading">Choose product colors *</h2>
-            <p id="p-pg">Select up to 5 backgrounds for your product</p>
-            <div class="design-color-options">
-                <div class="design-color-option color1"></div>
-                <div class="design-color-option color2"></div>
-                <div class="design-color-option color3"></div>
-                <div class="design-color-option color4"></div>
-                <div class="design-color-option color5"></div>
-                <div class="design-color-option color6"></div>
-                <div class="design-color-option color7"></div>
-                <div class="design-color-option color8"></div>
-                <div class="design-color-option color9"></div>
-            </div>
-            <h2 id="h2-heading">Start Designing *</h2>
-            <p id="p-pg">Design, Preview and Add your own design</p>
-            <div class="view-buttons">
-              <button class="preview">Preview</button>
-              <button class="design">Design</button>
+          <div class="design-cnt-sidebar">
+              <h2 class="h2-heading">Design your product *</h2>
+              <p class="p-pg">Max file size of 50MB</p>
+              <div class="design-upload-buttons">
+                  <button class="add-image">Add Image</button>
+                  <input type="file" id="image-upload" style="display: none;">
+                  <button class="add-text">Add Text</button>
+                  <!-- <input type="text" id="text-input" placeholder="Enter text...">
+                  <button class="apply-text">Apply Text</button> -->
+              </div>
+              <h2 class="h2-heading">Choose product colors *</h2>
+              <p class="p-pg">Select up to 5 backgrounds for your product</p>
+              <div class="design-color-options">
+                  <div class="design-color-option color1" data-color="#000"></div>
+                  <div class="design-color-option color2" data-color="#1a1a1a"></div>
+                  <div class="design-color-option color3" data-color="#333"></div>
+                  <div class="design-color-option color4" data-color="#666"></div>
+                  <div class="design-color-option color5" data-color="#999"></div>
+                  <div class="design-color-option color6" data-color="#ccc"></div>
+                  <div class="design-color-option color7" data-color="#fff"></div>
+                  <div class="design-color-option color8" data-color="#f00"></div>
+                  <div class="design-color-option color9" data-color="#0f0"></div>
+              </div>
+              <h2 class="h2-heading">Start Designing *</h2>
+              <p class="p-pg">Design, Preview and Add your own design</p>
+              <div class="view-buttons">
+                  <button class="preview">Preview</button>
+                  <button class="design">Design</button>
+              </div>
+              <button class="continue">Add design to Continue</button>
           </div>
-            <button class="continue">Add design to Continue</button>
-        </div>
-        <div class="design-main">
-            <div class="tshirt-view">
-                <img src="/assets/Images/Mens Casual Hooded Sweatshirts Long Sleeve Plain Pullover Hoodie Classic Tops.jpeg" alt="T-Shirt">
-            </div>
-        </div>
-    </div>
+          <div class="design-main">
+              <div class="tshirt-view">
+                  <img src="/assets/Images/Mens Casual Hooded Sweatshirts Long Sleeve Plain Pullover Hoodie Classic Tops.jpeg" alt="T-Shirt">
+              </div>
+          </div>
+      </div>
+  </section>
+<script>
+  // JavaScript for interactive features
+  document.addEventListener('DOMContentLoaded', function() {
+    const addImageButton = document.querySelector('.add-image');
+    const imageUploadInput = document.querySelector('#image-upload');
+    const addTextButton = document.querySelector('.add-text');
+    const applyTextButton = document.querySelector('.apply-text');
+    const textInput = document.querySelector('#text-input');
+    const textOverlay = document.querySelector('.text-overlay');
 
-    </section> 
+    // Handle image upload button click
+    addImageButton.addEventListener('click', function() {
+        imageUploadInput.click();
+    });
+
+    // Handle image selection and display
+    imageUploadInput.addEventListener('change', function() {
+        const file = imageUploadInput.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.querySelector('.tshirt-view img').src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+        // Handle adding text to image
+        applyTextButton.addEventListener('click', function() {
+        const newText = textInput.value.trim();
+        if (newText) {
+            const textElement = document.createElement('div');
+            textElement.classList.add('added-text');
+            textElement.textContent = newText;
+            textOverlay.appendChild(textElement);
+            textInput.value = ''; // Clear input after applying text
+        }
+    });
+});
+</script>   
   </body>
 </html>
