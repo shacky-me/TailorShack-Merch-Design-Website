@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Character Encoding: Defines the character encoding for the HTML document -->
+  <meta charset="UTF-8">
+
+  <!-- Compatibility Mode: Ensures proper rendering and functionality in IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Viewport Settings: Sets the viewport to make the website responsive on all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- SEO Metadata: Keywords, description, and author for search engine optimization -->
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="Kigen Meshack">
+
+  <!-- Stylesheet: Link to the external CSS file for styling the webpage -->
+  <link rel="stylesheet" href="/assets/styles.css">
+
+  <!-- Page Title: Title displayed in the browser tab -->
+  <title>Choose Platform</title>
+
+  <!-- Preconnect to Google Fonts: Improves performance by preconnecting to the Google Fonts domain -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts: Link to the Poppins font family from Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/dbfc6bcf24.js" crossorigin="anonymous"></script>
+  <script type="module" src="/assets/logout.js" defer type="module"></script>
+  <script type="module" src="overview.js" defer type="module"></script>
+</head>
+
+<body>
+  <section>
+    <div class="dashboard">
+      <div class="sidebar">
+        <a href=""><img src="/assets/Images/MERCH.png" class="logome"></a>
+        <ul>
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="productCatalog.html">Product Catalog</a></li>
+          <li><a href="settings.html">Settings</a></li>
+          <li><a href="productTemplates.html">Product Templates</a></li>
+          <li><a href="fileLibrary.html">File Library</a></li>
+          <li><a href="stores.html" class="active">Stores</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="branding.html">Branding</a></li>
+          <li><a href="wallet.html">Wallet</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <main class="myMainContent">
+    <header class="myOverviewHeader">
+      <div class="search-bar-overview">
+        <i class="fas fa-search"></i><input type="text" placeholder="Search TailorShack">
+      </div>
+
+      <div class="user-menu">
+        <div class="header-dropdown">
+          <div class="dropdown">
+            <button class="dropdown-toggle">
+              <i class="fas fa-bell"></i>
+              <span class="notification-count">2</span>
+            </button>
+            <div class="dropdown-menu">
+              <ul class="dropdown-list">
+                <li class="dropdown-item">Notification 1</li>
+                <li class="dropdown-item">Notification 2</li>
+                <li class="dropdown-item">See all notifications</li>
+              </ul>
+            </div>
+          </div>
+          <div class="dropdown username-dropdown">
+            <button class="dropdown-toggle">
+              <i class="fas fa-user"></i>
+              <span class="username"></span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-menu">
+              <ul class="dropdown-list">
+                <li class="dropdown-item" id="profile-item">Profile</li>
+                <li class="dropdown-item" id="settings-item">Settings</li>
+                <li class="dropdown-item" id="logout">Logout</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="new-order-button" onclick="window.open('newOrder.html', '_self')">New Order</button>
+      </div>
+    </header>
+
+    <div class="custom-container-store">
+      <div class="custom-store-card">
+          <img src="/assets/Images/shopify.png"> 
+          <h2>Shopify</h2>
+          <p>Ecommerce platform with everything you need to sell online.</p>
+          <button onclick="connectStore('Shopify')">Connect</button>
+      </div>
+      <div class="custom-store-card">
+          <img src="/assets/Images/etsy.png">
+          <h2>Etsy</h2>
+          <p>A creative marketplace with over 80 million active buyers worldwide.</p>
+          <button onclick="connectStore('Etsy')">Connect</button>
+      </div>
+      <div class="custom-store-card">
+          <img src="/assets/Images/woocommerce.png">
+          <h2>WooCommerce</h2>
+          <p>The simplest way to monetize blogs and websites built on WordPress.</p>
+          <button onclick="connectStore('WooCommerce')">Connect</button>
+      </div>
+      <div class="custom-store-card">
+          <img src="/assets/Images/wix.png">
+          <h2>Wix</h2>
+          <p>A platform with an intuitive drag and drop builder and 500+ customizable designer-made templates.</p>
+          <button onclick="connectStore('Wix')">Connect</button>
+      </div>
+      <div class="custom-store-card">
+          <img src="/assets/Images/squarespace.png">
+          <h2>Squarespace</h2>
+          <p>The platform for creatives, independent artists, and smaller businesses.</p>
+          <button onclick="connectStore('Squarespace')">Connect</button>
+      </div>
+      <div class="custom-store-card">
+        <svg class="LogoLockup svelte-1qhoav6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3967.7 995.7" width="22%" height="70px"><path d="M828.4,0H166.2C74.4,0,0,74.4,0,166.2v662.2c0,91.8,74.4,166.2,166.2,166.2h662.2
+          c91.8,0,166.2-74.4,166.2-166.2V166.2C994.6,74.4,920.2,0,828.4,0z M813.8,761.3c0,29-23.5,52.5-52.5,52.5h-528
+          c-29,0-52.5-23.5-52.5-52.5v-528c0-29,23.5-52.5,52.5-52.5h528c29,0,52.5,23.5,52.5,52.5V761.3z M391.8,632.3
+          c-16.7,0-30.1-13.5-30.1-30.2V391.3c0-16.7,13.4-30.3,30.1-30.3h211.1c16.6,0,30.1,13.5,30.1,30.3V602c0,16.7-13.5,30.2-30.1,30.2
+          H391.8z M1258.3,617.9h108.6c5.4,61.5,47.1,109.5,131.2,109.5c75.1,0,121.3-37.1,121.3-93.2c0-52.5-36.2-76-101.4-91.4l-84.2-18.1
+          c-91.4-19.9-160.2-78.7-160.2-174.7c0-105.9,94.1-178.3,216.3-178.3c129.4,0,212.7,67.9,219.9,168.3h-105
+          C1592.3,293,1553.3,265,1490,265c-67,0-113.1,36.2-113.1,82.4s39.8,74.2,108.6,89.6l83.3,18.1c91.4,19.9,153.8,75.1,153.8,171.9
+          c0,123.1-92.3,196.4-224.4,196.4C1349.7,823.3,1267.4,742.8,1258.3,617.9z M2111.1,994.6V814.5l7.1-79h-7.1
+          c-24.9,56.8-77.2,87.9-148.2,87.9c-114.5,0-199.7-93.2-199.7-236.1c0-142.9,85.2-236.1,199.7-236.1c70.1,0,119.8,32.8,148.2,84.3
+          h7.1V360h94.1v634.6H2111.1z M2114.6,587.2c0-91.4-55.9-144.7-124.3-144.7s-124.3,53.3-124.3,144.7c0,91.4,55.9,144.7,124.3,144.7
+          S2114.6,678.7,2114.6,587.2z M2287.4,634.3V360h101.2v265.4c0,71.9,34.6,106.5,92.3,106.5c71,0,117.2-50.6,117.2-129.6V360h101.2
+          v454.4h-94.1v-94.1h-7.1c-22.2,60.4-71,103-146.4,103C2343.3,823.3,2287.4,754.1,2287.4,634.3z M2760.9,687.5
+          c0-85.2,59.5-134.9,165.1-141.1l125.1-8v-35.5c0-42.6-31.1-68.3-86.1-68.3c-50.6,0-80.8,25.7-88.8,62.1h-101.2
+          c10.7-92.3,87-145.6,189.9-145.6c116.3,0,187.3,49.7,187.3,145.6v317.7h-94.1v-84.3h-7.1c-21.3,55.9-65.7,93.2-150.9,93.2
+          C2818.6,823.3,2760.9,768.3,2760.9,687.5z M3051.2,631.6v-24l-102.1,7.1c-55,3.5-79.9,24-79.9,64.8c0,34.6,28.4,59.5,68.3,59.5
+          C3009.5,739,3051.2,692.9,3051.2,631.6z M3227.7,814.5V360h94.1v87h7.1c13.3-59.5,58.6-87,126-87h46.2v91.4h-57.7
+          c-65.7,0-114.5,42.6-114.5,123.4v239.6H3227.7z M3964.1,605.9h-345.3c5.3,83.4,63.9,130.5,128.7,130.5c55,0,89.6-22.2,109.2-59.5
+          H3957c-27.5,92.3-108.3,146.4-210.4,146.4c-134,0-228.1-100.3-228.1-236.1c0-135.8,96.7-236.1,229-236.1
+          c133.1,0,220.1,91.4,220.1,205C3967.7,578.4,3965.9,589.9,3964.1,605.9z M3867.4,535.8c-3.5-63-55.9-105.6-119.8-105.6
+          c-60.4,0-110.9,38.2-123.4,105.6H3867.4z" fill="black" class="svelte-1qhoav6"></path></svg>
+          <h2>Square Online</h2>
+          <p>An ecommerce platform that allows you to easily create a stunning website, code-free.</p>
+          <button onclick="connectStore('Square Online')">Connect</button>
+      </div>
+      <div class="custom-store-card">
+          <img src="/assets/Images/walmart.png">
+          <h2>Walmart</h2>
+          <p>A marketplace with over 120M monthly visitors.</p>
+          <button onclick="connectStore('Walmart')">Connect</button>
+      </div>
+      <div class="custom-store-card">
+        <svg width="22%" height="70px" viewBox="0 0 108 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M28.8562 0.5L19.6486 18.5H11L14.8534 11.04H14.6805C11.5015 15.1668 6.7583 17.8835 0 18.5V11.1433C0 11.1433 4.32345 10.8879 6.86508 8.21575H0V0.500142H7.71561V6.84612L7.88878 6.84541L11.0417 0.500142H16.8768V6.80588L17.0499 6.8056L20.3211 0.5H28.8562Z" fill="#146EF5"></path>
+          <path d="M79.0662 16.5132H81.5511V2.25H79.0662V16.5132Z" fill="currentColor"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M65.3675 16.3675C65.9075 16.592 66.4567 16.7043 67.015 16.7043C67.9373 16.7043 68.7626 16.4798 69.4908 16.0307C70.2189 15.5817 70.7833 14.9628 71.1838 14.1739C71.5843 13.379 71.7845 12.4778 71.7845 11.4705C71.7845 10.4632 71.5782 9.56211 71.1656 8.76718C70.7529 7.97226 70.1795 7.35634 69.4452 6.91943C68.711 6.47646 67.8766 6.25801 66.9421 6.26407C66.3475 6.26407 65.7771 6.37937 65.2309 6.60996C64.6848 6.84055 64.2297 7.16823 63.8656 7.593C63.8375 7.62534 63.8102 7.658 63.7837 7.69099V2.2591H61.2897V16.5132H63.7655L63.7605 15.1816C63.8245 15.2601 63.893 15.3368 63.9657 15.4118C64.3601 15.8184 64.8274 16.1369 65.3675 16.3675ZM67.9161 14.0647C67.5095 14.3135 67.0453 14.4379 66.5234 14.4379C66.0076 14.4379 65.5343 14.3104 65.1035 14.0556C64.6726 13.7946 64.3298 13.4397 64.0749 12.9906C63.8261 12.5416 63.7017 12.0318 63.7017 11.4614C63.6957 10.891 63.817 10.3813 64.0658 9.93227C64.3207 9.47716 64.6635 9.1252 65.0944 8.87641C65.5252 8.62155 66.0016 8.49715 66.5234 8.50322C67.0453 8.49715 67.5095 8.61851 67.9161 8.86731C68.3287 9.11003 68.6442 9.45895 68.8627 9.91406C69.0872 10.3631 69.1995 10.8789 69.1995 11.4614C69.1995 12.044 69.0872 12.5598 68.8627 13.0088C68.6442 13.4579 68.3287 13.8098 67.9161 14.0647Z" fill="currentColor"></path>
+          <path d="M32.4562 3.11471H35.2961L37.8365 12.3923L40.539 3.11471H42.9056L45.8365 12.2061L48.2759 3.11471H50.8791L47.038 16.5132H44.5895L41.6091 7.63159L38.8733 16.5132H36.3975L32.4562 3.11471Z" fill="currentColor"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M55.0729 16.7498C54.0837 16.7559 53.1917 16.5374 52.3968 16.0945C51.6079 15.6454 50.986 15.0234 50.5308 14.2285C50.0818 13.4336 49.8573 12.5264 49.8573 11.5069C49.8573 10.5178 50.0879 9.62279 50.5491 8.8218C51.0102 8.0208 51.6352 7.39578 52.4241 6.94674C53.213 6.4977 54.0928 6.27318 55.0637 6.27318C56.156 6.27318 57.1117 6.5159 57.9309 7.00135C58.7562 7.4868 59.3721 8.17554 59.7787 9.06755C60.1913 9.9535 60.34 10.9699 60.2247 12.1168H52.428C52.4498 12.5737 52.5638 12.9894 52.77 13.3638C53.0006 13.7764 53.3222 14.098 53.7348 14.3286C54.1475 14.5592 54.6086 14.6745 55.1184 14.6745C55.5067 14.6684 55.8678 14.6017 56.2015 14.4743C56.5353 14.3408 56.8174 14.1618 57.048 13.9372C57.2847 13.7127 57.4516 13.4579 57.5487 13.1727H60.1519C59.9941 13.8705 59.6786 14.4925 59.2053 15.0386C58.7319 15.5787 58.1373 16.0004 57.4212 16.3038C56.7052 16.6072 55.9224 16.7559 55.0729 16.7498ZM52.7791 9.61369C52.6337 9.86727 52.5329 10.1403 52.4768 10.4329H57.6451C57.6076 10.0633 57.4935 9.72652 57.3029 9.42254C57.0844 9.06452 56.7871 8.78842 56.4109 8.59424C56.0347 8.39399 55.6099 8.29387 55.1366 8.29387C54.6329 8.29387 54.1748 8.40916 53.7621 8.63975C53.3495 8.87034 53.0218 9.19499 52.7791 9.61369Z" fill="currentColor"></path>
+          <path d="M73.6141 6.48253C73.6141 5.6694 73.7991 4.94729 74.1693 4.3162C74.5394 3.67905 75.0583 3.18449 75.7258 2.83254C76.3993 2.47452 77.1852 2.28944 78.0832 2.27731V4.48914C77.6645 4.49521 77.3065 4.5832 77.0092 4.75311C76.7179 4.91695 76.4934 5.15664 76.3356 5.47218C76.1904 5.76268 76.112 6.09946 76.1005 6.48253H78.0286V8.58514H76.099V16.5132H73.6141V8.58514H72.0121V6.48253H73.6141Z" fill="currentColor"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M87.868 16.7316C86.8546 16.7316 85.9474 16.5101 85.1464 16.0672C84.3515 15.6181 83.7265 14.9992 83.2714 14.2103C82.8223 13.4154 82.5978 12.5143 82.5978 11.5069C82.5978 10.4936 82.8223 9.58942 83.2714 8.79449C83.7265 7.99349 84.3515 7.37151 85.1464 6.92854C85.9474 6.48556 86.8546 6.26407 87.868 6.26407C88.8874 6.26407 89.7977 6.48556 90.5986 6.92854C91.4057 7.37151 92.0338 7.99046 92.4828 8.78539C92.9318 9.58031 93.1594 10.4875 93.1655 11.5069C93.1594 12.5143 92.9318 13.4154 92.4828 14.2103C92.0398 14.9992 91.4148 15.6181 90.6077 16.0672C89.8007 16.5101 88.8874 16.7316 87.868 16.7316ZM87.868 14.447C88.402 14.447 88.8753 14.3256 89.2879 14.0829C89.7006 13.8341 90.0191 13.4882 90.2437 13.0452C90.4682 12.5962 90.5804 12.0834 90.5804 11.5069C90.5804 10.9244 90.4682 10.4086 90.2437 9.95957C90.0191 9.51053 89.7006 9.16465 89.2879 8.92192C88.8753 8.67313 88.402 8.54873 87.868 8.54873C87.3401 8.54873 86.8698 8.67313 86.4571 8.92192C86.0506 9.16465 85.735 9.51053 85.5105 9.95957C85.286 10.4086 85.1768 10.9244 85.1828 11.5069C85.1828 12.0834 85.2951 12.5962 85.5196 13.0452C85.7502 13.4882 86.0657 13.8341 86.4662 14.0829C86.8728 14.3256 87.3401 14.447 87.868 14.447Z" fill="currentColor"></path>
+          <path d="M95.8506 6.48253H93.0836L96.0782 16.5132H98.4994L100.469 10.1066L102.595 16.5132H104.98L107.984 6.48253H105.481L103.777 12.726L101.894 6.48253H99.4733L97.5995 12.8635L95.8506 6.48253Z" fill="currentColor"></path>
+          </svg>
+          <h2>Webflow</h2>
+          <p>An ecommerce website builder with powerful design and marketing tools.</p>
+          <button onclick="connectStore('Webflow')">Connect</button>
+      </div>
+      <div class="custom-store-card">
+        <img src="/assets/Images/social.png">
+        <h2>Amazon</h2>
+        <p>The world's most popular online marketplace</p>
+        <button onclick="connectStore('Amazon')">Connect</button>
+    </div>
+  </div>
+
+  </main>
+
+  <script src="custom-script.js"></script>
+</body>
+
+</html>

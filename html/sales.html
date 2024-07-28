@@ -40,6 +40,27 @@
           <button type="submit" class="contact-button">Let's talk!</button><br>
           <p class="p-opacity">Never share sensitive information (credit card numbers, social security numbers, passwords) through this form.</p>
         </form>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const form = document.querySelector('.contact-form');
+            form.addEventListener('submit', (event) => {
+              event.preventDefault();
+              const name = document.getElementById('name').value;
+              const phone = document.getElementById('phone').value;
+              const email = document.getElementById('email').value;
+              
+              // Perform any necessary validation here
+              
+              // Send the data to the server or perform any other actions
+              // For now, let's just inform the user that we'll get in touch
+              alert(`Thank you, ${name}! We'll get in touch with you soon.`);
+              
+              // Reset the form
+              form.reset();
+            });
+          });
+        </script>
       </div>
     </section>
     

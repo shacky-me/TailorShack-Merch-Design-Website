@@ -28,6 +28,8 @@
     <!-- Google Fonts: Link to the Poppins font family from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dbfc6bcf24.js" crossorigin="anonymous"></script>
+    <script type="module" src="/assets/logout.js" defer type="module"></script>
+    <script type="module" src="overview.js" defer type="module"></script>
 
   </head>
 
@@ -46,7 +48,7 @@
                 <li><a href="stores.html">Stores</a></li>
                 <li><a href="insights.html">Insights</a></li>
                 <li><a href="branding.html">Branding</a></li>
-                <li><a href="wallet.html">Wallet</a></li>
+                <li><a href="wallet.html" class="active">Wallet</a></li>
             </ul>
         </div>
       </div>
@@ -76,19 +78,19 @@
               <div class="dropdown username-dropdown">
                 <button class="dropdown-toggle">
                   <i class="fas fa-user"></i>
-                  <span class="username">John Doe</span>
+                  <span class="username"></span>
                   <i class="fas fa-chevron-down"></i>
                 </button>
                 <div class="dropdown-menu">
                   <ul class="dropdown-list">
-                    <li class="dropdown-item">Profile</li>
-                    <li class="dropdown-item">Settings</li>
-                    <li class="dropdown-item">Logout</li>
+                    <li class="dropdown-item" id="profile-item">Profile</li>
+                    <li class="dropdown-item" id="settings-item">Settings</li>
+                    <li class="dropdown-item" id="logout">Logout</li>
                   </ul>
                 </div>
               </div>
             </div>
-            <button class="new-order-button">New Order</button>
+            <button class="new-order-button" onclick="window.open('newOrder.html', '_self')">New Order</button>
           </div>
         </header>
 
@@ -119,7 +121,14 @@
               <h5>Current Balance</h5>
               <p>KSHS 0.00</p>
               <p>Pay with:</p>
-              <button type="button" class="payment-btn"><i class="fa-brands fa-paypal"></i> PayPal</button><br>
+              <button type="button" class="payment-btn"><i class="fa-brands fa-paypal"></i> PayPal
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input type="hidden" name="hosted_button_id" value="T36U996VKJHGU" />
+                  <input type="hidden" name="currency_code" value="USD" />
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+                </form>
+              </button><br>
               <button type="button" class="payment-btn"><img src="/assets/Images/32px-M-PESA_LOGO-01.svg.png">Mpesa</button>
             </div>
           </div>
@@ -163,5 +172,7 @@
       </main>
 
     <script src="script.js"></script>
+    <script src="searchHandler.js" defer></script>
+    <script src="apiintegration.js" defer></script>
   </body>
 </html>

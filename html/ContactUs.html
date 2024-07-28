@@ -78,7 +78,7 @@
           <p><strong>Master custom merchandise design</strong><br><br>Learn from our resources and insights to elevate your design and branding strategies.</p>
           <p><strong>Explore life at TailorShack</strong><br><br>Check our open positions, read about our company culture and values, and explore our charitable initiatives.</p>
 
-          <form class="checkMyForm">
+          <form class="checkMyForm" onsubmit="return handleSubmit(event)">
             <label for="first-name" class="myLabel">First Name:</label>
             <input type="text" id="first-name" name="first-name" class="myInput" required>
 
@@ -105,8 +105,38 @@
 
             <button type="submit" class="myContactButton">Submit</button>
         </form>
-        </div>
+        <script>
+          function handleSubmit(event) {
+            event.preventDefault();
+            // Get form values
+            const firstName = document.getElementById('first-name').value;
+            const lastName = document.getElementById('last-name').value;
+            const companyName = document.getElementById('company-name').value;
+            const companyEmail = document.getElementById('company-email').value;
+            const jobTitle = document.getElementById('job-title').value;
+            const country = document.getElementById('country').value;
+            const phoneNumber = document.getElementById('phone-number').value;
+            const message = document.getElementById('message').value;
 
+            // Perform any necessary validation or data processing here
+
+            // Display success message to the user
+            alert('Thank you for your feedback! We have received your details and will be in touch with you promptly.');
+
+            // Reset the form
+            document.getElementById('first-name').value = '';
+            document.getElementById('last-name').value = '';
+            document.getElementById('company-name').value = '';
+            document.getElementById('company-email').value = '';
+            document.getElementById('job-title').value = '';
+            document.getElementById('country').value = '';
+            document.getElementById('phone-number').value = '';
+            document.getElementById('message').value = '';
+
+            return false;
+          }
+        </script>
+        </div>
         <div class="points-of-contact">
           <h3>Points of Contact</h3>
           <p><strong>TailorShack</strong><br><br>

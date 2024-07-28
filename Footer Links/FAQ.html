@@ -32,6 +32,7 @@
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/dbfc6bcf24.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header>
     <section class="myheading">
@@ -39,41 +40,79 @@
         <div class="Navbarside">
           <ul>
             <li onclick=hideNavbarside()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="#bfbfcf"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="Catalog.html">Catalog</a></li>
-            <li><a href="HowItWorks.html">How It Works</a></li>
-            <li><a href="Pricing.html">Pricing</a></li>
-            <li><a href="Services.html">Services</a></li>
-            <li><a href="UseCases.html">Use Cases</a></li>
-            <li><a href="ContactUs.html">ContactUs</a></li>
-            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="/html/Catalog.html">Catalog</a></li>
+            <li><a href="/html/HowItWorks.html">How It Works</a></li>
+            <li><a href="/html/Pricing.html">Pricing</a></li>
+            <li><a href="/html/">Services</a></li>
+            <li><a href="/html/UseCases.html">Use Cases</a></li>
+            <li><a href="/html/ContactUs.html">ContactUs</a></li>
+            <li><a href="/html/Blog.html">Blog</a></li>
           </ul>
         </div>
         <!-- Logo: Link to the homepage with the site logo -->
         <li class="Navbarside-btn-menu" onclick=showNavbarside()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        <a href="index.html"><img src="/assets/Images/MERCH.png" class="logo"></a>
+        <a href="/html/index.html"><img src="/assets/Images/MERCH.png" class="logo"></a>
     
         <!-- Navigation Links: Primary site navigation -->
         <div id="navbar">
           <ul>
-            <li class="hideOnMobile"><a href="Catalog.html">Catalog</a></li>
-            <li class="hideOnMobile"><a href="HowItWorks.html">How It Works</a></li>
-            <li class="hideOnMobile"><a href="Pricing.html">Pricing</a></li>
-            <li class="hideOnMobile"><a href="Services.html">Services</a></li>
-            <li class="hideOnMobile"><a href="UseCases.html">Use Cases</a></li>
-            <li class="hideOnMobile"><a href="ContactUs.html">ContactUs</a></li>
-            <li class="hideOnMobile"><a href="Blog.html">Blog</a></li>
+            <li class="hideOnMobile"><a href="/html/Catalog.html">Catalog</a></li>
+            <li class="hideOnMobile"><a href="/html/HowItWorks.html">How It Works</a></li>
+            <li class="hideOnMobile"><a href="/html/Pricing.html">Pricing</a></li>
+            <li class="hideOnMobile"><a href="/html/Services.html">Services</a></li>
+            <li class="hideOnMobile"><a href="/html/UseCases.html">Use Cases</a></li>
+            <li class="hideOnMobile"><a href="/html/ContactUs.html">ContactUs</a></li>
+            <li class="hideOnMobile"><a href="/html/Blog.html">Blog</a></li>
           </ul>
         </div>
     
         <!-- Authentication Buttons: Log in and Sign up options -->
         <div class="auth-btn">
-          <a href="Login.html"><button class="btn-1">Log in</button></a>
-          <a href="SignUp.html"><button class="btn-2">Sign Up</button></a>
+          <a href="/html/Login.html"><button class="btn-1">Log in</button></a>
+          <a href="/html/SignUp.html"><button class="btn-2">Sign Up</button></a>
         </div>
       </nav>
     </section>
   </header>
-  <main></main>
-  <footer></footer>
+  
+  <main>
+    <!-- Frequently Asked Questions Section -->
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3>How do I place an order?</h3>
+          <p>To place an order, simply browse our catalog, select the desired merchandise, customize it with your design, and add it to your cart. Proceed to the checkout page to complete your order.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What payment methods do you accept?</h3>
+          <p>We accept all major credit cards, including Visa, Mastercard, and American Express. We also offer payment through PayPal for added convenience.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I cancel or modify my order?</h3>
+          <p>Once an order has been placed, it cannot be modified or canceled. We recommend reviewing your order carefully before proceeding to checkout.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How long does it take to receive my order?</h3>
+          <p>The delivery time depends on various factors, including the complexity of your design and the quantity ordered. Typically, orders are processed and shipped within 5-7 business days.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What is your return policy?</h3>
+          <p>We have a 30-day return policy. If you are not satisfied with your order, please contact our customer support team within 30 days of receiving your merchandise for assistance.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    function showNavbarside(){
+      const Navbarside = document.querySelector('.Navbarside')
+      Navbarside.style.display = 'flex'
+    }
+    function hideNavbarside() {
+      const Navbarside = document.querySelector('.Navbarside')
+      Navbarside.style.display = 'none'
+    }
+  </script>
 </body>
+
 </html>

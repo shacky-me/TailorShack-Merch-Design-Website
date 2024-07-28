@@ -61,10 +61,33 @@
       <main>
         <section class="container">
           <div class="search">
-            <form action="#">
-              <img src="/assets/Images/search-regular-24.png" class="search-icon"><input type="text" name="search" placeholder="Search for products, brands, categories, and print providers">
+            <form action="#" onsubmit="searchProducts(event)">
+              <img src="/assets/Images/search-regular-24.png" class="search-icon">
+              <input type="text" name="search" id="searchInput" placeholder="Search for products, brands, categories, and print providers">
               <button type="submit">Search</button>
             </form>
+
+            <script>
+              function searchProducts(event) {
+                event.preventDefault();
+                const searchInput = document.getElementById('searchInput');
+                const searchTerm = searchInput.value;
+                // search logic here
+                console.log('Searching for:', searchTerm);
+                // Reset the input field
+                searchInput.value = '';
+            
+                // Define the userLoggedIn variable based on the user's login status
+                const userLoggedIn = false; //true if the user is logged in
+            
+                // Redirect to search results page with the search term as a query parameter
+                if (userLoggedIn) {
+                  window.location.href = `/assets/dashboardMerch/productCatalog.html?query=${searchTerm}`;
+                } else {
+                  window.location.href = "/html/login.html";
+                }
+              }
+            </script>
             <div class="currency">
               <select name="currency">
                 <option value="ksh" selected>KSH</option>
