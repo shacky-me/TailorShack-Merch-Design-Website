@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Custom Merchandise</title>
+    <link rel="stylesheet" href="myorderstyles.css">
+</head>
+<body>
+    <h1>Order TailorShack Custom Merchandise</h1>
+    <form action="connect.php" method="post" id="orderForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="product">Product Type:</label>
+        <select id="product" name="product" required>
+            <option value="tshirt">T-Shirt</option>
+            <option value="mug">Mug</option>
+            <option value="sticker">Sticker</option>
+            <option value="hoodies">Hoodies</option>
+            <option value="jackets">Jackets</option>
+            <option value="hats">Hats</option>
+            <option value="phonecases">Phone Cases</option>
+            <option value="wallart">Wall Art</option>
+            <option value="pillows">Pillows</option>
+            <option value="blankets">Blankets</option>
+            <option value="bags">Bags</option>
+            <option value="socks">Socks</option>
+        </select><br><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+        <button type="submit" onclick="placeOrder()">Place Order</button>
+    </form>
+
+    <script src="myscript.js"></script>
+</body>
+</html>
