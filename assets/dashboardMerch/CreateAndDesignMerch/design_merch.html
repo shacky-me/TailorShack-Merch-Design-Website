@@ -46,17 +46,53 @@
               </div>
               <h2 class="h2-heading">Choose product colors *</h2>
               <p class="p-pg">Select up to 5 backgrounds for your product</p>
-              <div class="design-color-options">
-                  <div class="design-color-option color1" data-color="#000"></div>
-                  <div class="design-color-option color2" data-color="#1a1a1a"></div>
-                  <div class="design-color-option color3" data-color="#333"></div>
-                  <div class="design-color-option color4" data-color="#666"></div>
-                  <div class="design-color-option color5" data-color="#999"></div>
-                  <div class="design-color-option color6" data-color="#ccc"></div>
-                  <div class="design-color-option color7" data-color="#fff"></div>
-                  <div class="design-color-option color8" data-color="#f00"></div>
-                  <div class="design-color-option color9" data-color="#0f0"></div>
-              </div>
+            <div class="design-color-options" style="gap: .7rem; cursor: pointer;">
+                <div class="design-color-option color1" data-image="/assets/Images/black_tshirt.jpg" data-color="#000" style="background-color: #000; cursor: pointer;"></div>
+                <div class="design-color-option color2" data-color="#1a1a1a" style="background-color:#c2c508; cursor: pointer;">
+                </div>
+                <div class="design-color-option color3" data-color="#333" style="background-color: #333; cursor: pointer;"></div>
+                <div class="design-color-option color4" data-color="#666" style="background-color: #10717e; cursor: pointer;"></div>
+                <div class="design-color-option color5" data-color="#999" style="background-color: #500303; cursor: pointer;"></div>
+                <div class="design-color-option color6" data-color="#ccc" style="background-color: #ae2ed4; cursor: pointer;"></div>
+                <div class="design-color-option color7" data-color="#fff" style="background-color: #004ca3; cursor: pointer;"></div>
+                <div class="design-color-option color8" data-color="#f00" style="background-color: #f00; cursor: pointer;"></div>
+                <div class="design-color-option color9" data-color="#0f0" style="background-color: #00fff2; cursor: pointer;"></div>
+                <div class="design-color-option color10" data-color="#0f0" style="background-color: #0f0; cursor: pointer;"></div>
+                <div class="design-color-option color11" data-color="#0f0" style="background-color: #818181; cursor: pointer;">
+                </div>
+                <div class="design-color-option color12" data-color="#0f0" style="background-color: #ffee00; cursor: pointer;">
+                </div>
+                <div class="design-color-option color13" data-color="#0f0" style="background-color: #ff7b00; cursor: pointer;">
+                </div>
+                <div class="design-color-option color14" data-color="#0f0" style="background-color: #050127; cursor: pointer;">
+                </div>
+                <div class="design-color-option color15" data-color="#0f0" style="background-color: #70a070; cursor: pointer;">
+                </div>
+                <div class="design-color-option color16" data-color="#0f0" style="background-color: #883b3b; cursor: pointer;">
+                </div>
+                <div class="design-color-option color17" data-color="#0f0" style="background-color: #ff0095; cursor: pointer;">
+                </div>
+                <div class="design-color-option color18" data-color="#0f0" style="background-color: #886401; cursor: pointer;">
+                </div>
+                <div class="design-color-option color19" data-color="#0f0" style="background-color: #127c6a; cursor: pointer;">
+                </div>
+                <div class="design-color-option color20" data-color="#0f0" style="background-color: #252525; cursor: pointer;">
+                </div>
+                <div class="design-color-option color21" data-color="#0f0" style="background-color: #1900ff; cursor: pointer;">
+                </div>
+                <div class="design-color-option color22" data-color="#0f0" style="background-color: #016141; cursor: pointer;">
+                </div>
+                <div class="design-color-option color23" data-color="#0f0" style="background-color: #18362f; cursor: pointer;">
+                </div>
+                <div class="design-color-option color24" data-color="#0f0" style="background-color: #b6b6b6; cursor: pointer;">
+                </div>
+                <div class="design-color-option color25" data-color="#0f0" style="background-color: #dbf3db; cursor: pointer;">
+                </div>
+                <div class="design-color-option color26" data-color="#0f0" style="background-color: #8b005d; cursor: pointer;">
+                </div>
+                <div class="design-color-option color27" data-color="#0f0" style="background-color: #91ff00; cursor: pointer;">
+                </div>
+            </div>
               <h2 class="h2-heading">Start Designing *</h2>
               <p class="p-pg">Design, Preview and Add your own design</p>
               <div class="view-buttons">
@@ -67,11 +103,12 @@
           </div>
           <div class="design-main">
               <div class="tshirt-view">
-                  <img src="/assets/Images/Mens Casual Hooded Sweatshirts Long Sleeve Plain Pullover Hoodie Classic Tops.jpeg" alt="T-Shirt">
+                  <img id="productImage" src="" alt="T-Shirt" width="500" height="auto">
               </div>
           </div>
       </div>
   </section>
+  <script src="design.js"></script>
 <script>
   // JavaScript for interactive features
   document.addEventListener('DOMContentLoaded', function() {
