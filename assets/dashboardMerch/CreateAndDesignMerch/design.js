@@ -30,3 +30,20 @@ const colorOptions = document.querySelectorAll('.design-color-option');
                 productImage.src = 'newImageSrc';
             });
         });
+
+// Select the product element
+// const product = document.getElementById('productImage');
+
+// // Select all swatches
+// const swatches = document.querySelectorAll('.design-color-option');
+
+// // Add click event listeners to each swatch
+// swatches.forEach(swatch => {
+//     swatch.addEventListener('click', () => {
+//         // Get the color from the data-color attribute
+//         const color = swatch.getAttribute('data-color');
+        
+//         // Change the background color of the product
+//         product.style.backgroundColor = color;
+//     });
+// });
